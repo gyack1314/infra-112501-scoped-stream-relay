@@ -1,0 +1,17 @@
+{"timestamp": 0, "type": "allow", "data": {"principal": "vendor", "site": "east", "device": "cam-a", "since": 0}}
+{"timestamp": 0, "type": "allow", "data": {"principal": "vendor", "site": "east", "device": "cam-b", "since": 0}}
+{"timestamp": 1, "type": "open", "data": {"principal": "vendor", "client": "browser-1", "local_state": "resume"}}
+{"timestamp": 2, "type": "open", "data": {"principal": "vendor", "client": "browser-2", "local_state": "resume"}}
+{"timestamp": 3, "type": "publish", "data": {"site": "east", "device": "cam-a", "alarm": "42", "rev": 1, "status": "raised", "body": "A 初始"}}
+{"timestamp": 4, "type": "fetch", "data": {"principal": "vendor", "client": "browser-1"}}
+{"timestamp": 5, "type": "fetch", "data": {"principal": "vendor", "client": "browser-2"}}
+{"timestamp": 6, "type": "disconnect", "data": {"principal": "vendor", "client": "browser-1"}}
+{"timestamp": 7, "type": "deny", "data": {"principal": "vendor", "site": "east", "device": "cam-a"}}
+{"timestamp": 8, "type": "publish", "data": {"site": "east", "device": "cam-a", "alarm": "42", "rev": 2, "status": "corrected", "body": "A 更正"}}
+{"timestamp": 9, "type": "publish", "data": {"site": "east", "device": "cam-b", "alarm": "23", "rev": 1, "status": "raised", "body": "B 初始"}}
+{"timestamp": 10, "type": "fetch", "data": {"principal": "vendor", "client": "browser-2"}}
+{"timestamp": 11, "type": "open", "data": {"principal": "vendor", "client": "browser-1", "local_state": "resume"}}
+{"timestamp": 12, "type": "fetch", "data": {"principal": "vendor", "client": "browser-1"}}
+{"timestamp": 13, "type": "allow", "data": {"principal": "vendor", "site": "east", "device": "cam-a", "since": 1}}
+{"timestamp": 14, "type": "publish", "data": {"site": "east", "device": "cam-a", "alarm": "42", "rev": 3, "status": "corrected", "body": "A 当前"}}
+{"timestamp": 15, "type": "fetch", "data": {"principal": "vendor", "client": "browser-1"}}

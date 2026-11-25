@@ -1,0 +1,12 @@
+[
+  "ack",
+  "allow",
+  "deny",
+  "disconnect",
+  "fetch",
+  "move",
+  "open",
+  "publish",
+  "rebuild_ack",
+  "trim"
+]

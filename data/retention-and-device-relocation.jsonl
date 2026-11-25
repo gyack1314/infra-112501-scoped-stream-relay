@@ -1,0 +1,12 @@
+{"timestamp": 0, "type": "allow", "data": {"principal": "vendor", "site": "east", "device": "cam-a", "since": 0}}
+{"timestamp": 1, "type": "open", "data": {"principal": "vendor", "client": "floor", "local_state": "resume"}}
+{"timestamp": 2, "type": "publish", "data": {"site": "east", "device": "cam-a", "alarm": "2", "rev": 1, "status": "raised", "body": "东区设备"}}
+{"timestamp": 3, "type": "fetch", "data": {"principal": "vendor", "client": "floor"}}
+{"timestamp": 4, "type": "disconnect", "data": {"principal": "vendor", "client": "floor"}}
+{"timestamp": 5, "type": "move", "data": {"device": "cam-a", "from_site": "east", "to_site": "west"}}
+{"timestamp": 6, "type": "publish", "data": {"site": "west", "device": "cam-a", "alarm": "2", "rev": 1, "status": "raised", "body": "西区设备"}}
+{"timestamp": 7, "type": "trim", "data": {"retain_from": 6}}
+{"timestamp": 8, "type": "open", "data": {"principal": "vendor", "client": "floor", "local_state": "resume"}}
+{"timestamp": 9, "type": "fetch", "data": {"principal": "vendor", "client": "floor"}}
+{"timestamp": 10, "type": "open", "data": {"principal": "vendor", "client": "floor", "local_state": "rebuild"}}
+{"timestamp": 11, "type": "fetch", "data": {"principal": "vendor", "client": "floor"}}
