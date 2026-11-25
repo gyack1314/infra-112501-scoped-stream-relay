@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>告警订阅运维台客户端</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>告警订阅运维台</h1>
+      <section class="panel">
+        <label>服务地址 <input id="baseUrl" value="" placeholder="默认当前源" /></label>
+        <label>合作方 principal <input id="principal" value="vendor" /></label>
+        <label>浏览器 client <input id="client" value="browser-1" /></label>
+        <div class="row">
+          <button id="openResume">握手并续读</button>
+          <button id="openRebuild">按当前授权重建</button>
+          <button id="fetch">拉取一批</button>
+          <button id="watch">开启实时流</button>
+          <button id="disconnect">断开逻辑连接</button>
+          <button id="rebuildAck">确认重建</button>
+          <button id="status">刷新状态</button>
+        </div>
+        <p class="hint">进度凭据只保存在本浏览器 localStorage，并以不透明字符串显示。</p>
+      </section>
+
+      <section class="grid">
+        <div class="panel">
+          <h2>订阅进度</h2>
+          <div id="progress" class="mono"></div>
+        </div>
+        <div class="panel danger">
+          <h2>应清除的缓存标识</h2>
+          <ul id="evictions"></ul>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>正常告警流</h2>
+        <div id="events"></div>
+      </section>
+
+      <section class="panel">
+        <h2>撤回通知</h2>
+        <div id="revocations"></div>
+      </section>
+
+      <section class="panel">
+        <h2>原始响应</h2>
+        <pre id="raw" class="mono"></pre>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

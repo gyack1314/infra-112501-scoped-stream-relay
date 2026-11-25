@@ -9,4 +9,7 @@ build/
 coverage/
 __pycache__/
 *.py[cod]
+.alert-gateway-state.json
+.alert-gateway-client.json
+.alert-gateway-*.json
 .DS_Store
